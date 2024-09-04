@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahyog AI EdTech Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
+            color: #fff;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="font-roboto">
+    <!-- Header -->
+    <header class="bg-black p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="image/Sahyog_Ai.png" width=20px height="30px" "Sahyog Ai Logo" class="h-auto w-auto">
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-orange-500">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Learning Paths</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Resources</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Reviews</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Community</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6 max-w-4xl">
+        <!-- User Understanding Section -->
+        <section class="mb-8 text-center">
+            <h2 class="text-4xl font-bold text-orange-500 mb-4">Welcome to Sahyog AI</h2>
+            <p class="text-gray-300 mb-6">Let's get to know you better to provide a personalized learning experience.</p>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md glass">
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium">Name</label>
+                        <input type="text" id="name" class="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium">Email</label>
+                        <input type="email" id="email" class="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                    <div>
+                        <label for="academic-status" class="block text-sm font-medium">Academic Status</label>
+                        <select id="academic-status" class="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md focus:border-orange-500 focus:ring-orange-500">
+                            <option value="">Select your academic status</option>
+                            <option value="high-school">High School</option>
+                            <option value="undergraduate">Undergraduate</option>
+                            <option value="postgraduate">Postgraduate</option>
+                            <option value="working-professional">Working Professional</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="monetary-status" class="block text-sm font-medium">Monetary Status</label>
+                        <select id="monetary-status" class="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md focus:border-orange-500 focus:ring-orange-500">
+                            <option value="">Select your monetary status</option>
+                            <option value="low-income">Low Income</option>
+                            <option value="middle-income">Middle Income</option>
+                            <option value="high-income">High Income</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="current-problems" class="block text-sm font-medium">Current Life Problems</label>
+                        <textarea id="current-problems" rows="4" class="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md focus:border-orange-500 focus:ring-orange-500"></textarea>
+                    </div>
+                    <div>
+                        <label for="goals" class="block text-sm font-medium">Your Goals</label>
+                        <textarea id="goals" rows="4" class="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md focus:border-orange-500 focus:ring-orange-500"></textarea>
+                    </div>
+                    <div>
+                        <label for="time-availability" class="block text-sm font-medium">Time Availability</label>
+                        <select id="time-availability" class="mt-1 block w-full p-2 bg-gray-700 border border-gray-600 rounded-md focus:border-orange-500 focus:ring-orange-500">
+                            <option value="">Select your available time</option>
+                            <option value="less-than-5-hours">Less than 5 hours a week</option>
+                            <option value="5-10-hours">5-10 hours a week</option>
+                            <option value="more-than-10-hours">More than 10 hours a week</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="mt-4 px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Personalized Solution Section -->
+        <section class="mb-8 text-center">
+            <h2 class="text-4xl font-bold text-orange-500 mb-4">Your Personalized Solution</h2>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md glass">
+                <div class="flex items-center mb-4">
+                    <img src="https://placehold.co/100x100" alt="AI personalization icon" class="rounded-full mr-4">
+                    <div>
+                        <h3 class="text-xl font-semibold">Customized Learning Paths</h3>
+                        <p class="text-gray-400">Personalized learning journeys tailored to your skills, goals, and progress. Recommendations adjust dynamically as you advance.</p>
+                    </div>
+                </div>
+                <button class="mt-4 px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600">Explore Your Path</button>
+            </div>
+        </section>
+
+        <!-- Unified Resource Aggregation Section -->
+        <section class="mb-8 text-center">
+            <h2 class="text-4xl font-bold text-orange-500 mb-4">Unified Resource Aggregation</h2>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md glass">
+                <div class="flex items-center mb-4">
+                    <img src="https://placehold.co/100x100" alt="Resource aggregation icon" class="rounded-full mr-4">
+                    <div>
+                        <h3 class="text-xl font-semibold">All-in-One Access</h3>
+                        <p class="text-gray-400">Aggregates resources from top EdTech courses, offline workshops, books, webinars, and certifications. Smart filtering system powered by AI.</p>
+                    </div>
+                </div>
+                <button class="mt-4 px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600">Discover Resources</button>
+            </div>
+        </section>
+
+        <!-- Trustworthy Reviews Section -->
+        <section class="mb-8 text-center">
+            <h2 class="text-4xl font-bold text-orange-500 mb-4">Trustworthy Reviews</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Review Card -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md glass">
+                    <h3 class="text-xl font-semibold mb-2">Course Review: AI Basics by ABC Institute</h3>
+                    <p class="text-gray-400 mb-4">100% honest and unbiased reviews from verified users. This course is highly recommended for beginners.</p>
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-500"><i class="fas fa-star"></i> 4.8</span>
+                        <span class="ml-2 text-gray-400">(350 reviews)</span>
+                    </div>
+                    <button class="px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600">Read More</button>
+                </div>
+                <!-- More review cards can be added similarly -->
+            </div>
+        </section>
+
+        <!-- Supportive Community Section -->
+        <section class="mb-8 text-center">
+            <h2 class="text-4xl font-bold text-orange-500 mb-4">Supportive Community</h2>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md glass">
+                <h3 class="text-xl font-semibold mb-4">Join the Community</h3>
+                <ul class="space-y-4">
+                    <li class="border-b border-gray-700 pb-4">
+                        <h4 class="text-lg font-semibold">Discussion: Future of AI in Education</h4>
+                        <p class="text-gray-400">Connect, share experiences, and support each other in your upskilling journeys.</p>
+                        <button class="mt-2 px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600">View Discussion</button>
+                    </li>
+                    <!-- More discussion items can be added similarly -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Sahyog AI. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
